@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Chakit Sharma">
-
+    <link rel="icon" href="images/logo-removebg-preview.png" />
     <title>Darshan Rath</title>
 
     <meta name="keywords"
@@ -14159,15 +14159,16 @@
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="input-box">
-                                                    <input id="fsubject" type="text"
+                                                    <input id="fPhone" type="text"
                                                         placeholder="Phone Number" required="">
                                                 </div>
+                                                <p class="text-danger" id="ValidatePhone" style="font-size: 12px;" hidden></p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="input-box">
-                                                    <input id="fsubject" type="text" 
+                                                    <input id="fNumberOfp" type="text" 
                                                         placeholder="Number of Person">
                                                 </div>
                                             </div>
@@ -14177,7 +14178,7 @@
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="input-box">
-                                                    <input id="fsubject" type="text" 
+                                                    <input id="fDate" type="text" 
                                                         placeholder="Travel Date">
                                                 </div>
                                             </div>
@@ -14188,7 +14189,7 @@
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="input-box">
-                                                    <textarea id="fname" rows="2" 
+                                                    <textarea id="fMsg" rows="2" 
                                                         placeholder="Write Your Message"></textarea>
                                                 </div>
                                             </div>
@@ -14198,7 +14199,7 @@
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="input-box">
-                                                    <input class="button sm" id="formSubmit" 
+                                                    <input class="button sm" onclick="SendLeadForm()" id="MineBntForm" 
                                                         type="button" value="Send Enquiry">
                                                 </div>
                                             </div>
@@ -14270,10 +14271,10 @@
                                     <h4>Starting Price - 11999(Per Person)</h4> </div>-->
                             </div>
                             <div class="sDeal-bottom">
-                                <h6>Statue of Unity Deluxe Package<span> 2 Nights 3 Days</span></h6>
+                                <h6>Statue of Unity<span> 2 Nights 3 Days</span></h6>
 
                                 <div class="price-div"> <span class="per-p">From</span>
-                                    <h2><i class="fa fa-inr" aria-hidden="true"></i> 5,999 </h2><span
+                                    <h2><i class="fa fa-inr" aria-hidden="true"></i> 4850 </h2><span
                                         class="per-p">ONWARDS</span>
                                 </div>
                                 <hr>
@@ -14324,15 +14325,22 @@
                                         </summary>
                                         <ul class="pkg-incusion">
 
-                                            <li>2 Nights Stay in Vadodara</li>
-                                            <li>Accommodation : On DBL sharing at all the location in Luxury Rooms</li>
-                                            <li>All Sightseeing in Private Cab</li>
-                                            <li>Visit Statue of Unity - the world's tallest statue, Narmada Dam, and
-                                                Poicha Temple.</li>
-                                            <li>Kevadia City Tour Sightseeing</li>
-                                            <li>Toll Tax and Parking Charges, Fuel Charges Include</li>
-
-
+                                            <li>Night Stay in 3 STAR Hotel for 3 Nights</li>
+                                            <li>All Famous Tourist places in PRIVATE CAB</li>
+                                            <li>Tour of Statue of Unity</li>
+                                            <li>Tour of  Ahmedabad</li>
+                                            <li>Famous Akshardham Temple Tour Included</li>
+                                            <li>Viewing Gallery in addition to</li>
+                                            <li>SoU Entry</li>
+                                            <li>Exhibition</li>
+                                            <li>Audio Visual Gallery</li>
+                                            <li>Valley of Flowers</li>
+                                            <li>Sardar Sarovar Dam Viewpoint</li>
+                                            <li>Bus Service for Above places</li>
+                                            <li>Ticket of Statue of Unity</li>
+                                            <li>ALL local Important Places Tour</li>
+                                            <li>Fuel Charge, Toll Tax, Drivers Bata All Included</li>
+                                            <li>Get complete details in your Mail of Whatsapp by Filling the Enquiry Form(Highlight)</li>
                                         </ul>
                                     </details>
                                 </div>
@@ -14347,9 +14355,7 @@
                                             href="tel:9643368210" class="button sm"><i class="fa fa-phone"></i></a>
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
-                                            href=""
-                                            class="button-orange sm" data-toggle="modal"
-                                            data-target="#enquirymodal">ENQUIRY NOW</a> </div>
+                                            class="button-orange sm" onclick="PackageEnquiry('StatueOfUnity')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -14361,93 +14367,8 @@
                                     <h4>Starting Price - 11999(Per Person)</h4> </div>-->
                             </div>
                             <div class="sDeal-bottom">
-                                <h6>Dwarka Somnath Gir Tour Package<span> 5 Nights 6 Days</span></h6>
+                                <h6>Dwarka Somnath Gir Tour Package<span> 4 Nights 5 Days</span></h6>
 
-                                <div class="price-div"> <span class="per-p">From</span>
-                                    <h2><i class="fa fa-inr" aria-hidden="true"></i> 12,999 </h2><span
-                                        class="per-p">ONWARDS</span>
-                                </div>
-                                <hr>
-                                <h4>Include</h4>
-                                <ul class="itnry">
-                                    <li>
-                                        <figure> <img src="images/transfer-icon.png" alt="transport" title="Transport"
-                                                class="img-fluid"> </figure>
-                                        <p>Transfers</p>
-                                    </li>
-                                    <li>
-                                        <figure> <img src="images/hotel-icon.png" alt="Hotel" title="Hotel"
-                                                class="img-fluid"> </figure>
-                                        <p>Hotels</p>
-                                    </li>
-                                    <li>
-                                        <figure> <img src="images/meals-icon.png" alt="Meal" title="Meal"
-                                                class="img-fluid"> </figure>
-                                        <p>Meals</p>
-                                    </li>
-                                    <li>
-                                        <figure> <img src="images/Sightseeing-icon.png" alt="Sightseeing"
-                                                title="Sightseeing" class="img-fluid"> </figure>
-                                        <p>Sightseeing</p>
-                                    </li>
-
-
-                                </ul>
-                                <hr>
-                                <div class="body">
-                                    <h2>Package Inclusions:</h2>
-                                    <ul class="pkg-incusion">
-
-                                        <li>Welcome Drink on Arrival (Non Alcoholic).</li>
-
-                                        <li>Meal Plan Breakfast &amp; Dinner</li>
-
-                                    </ul>
-                                    <details>
-                                        <summary>
-                                            <span id="open">read more</span>
-                                            <span id="close">close</span>
-                                        </summary>
-                                        <ul class="pkg-incusion">
-
-                                            <li>Accommodation for 5 Nights</li>
-                                            <li>Accommodation : On DBL sharing at all the location in Luxury Rooms</li>
-                                            <li>All Sightseeing in Private Cab</li>
-                                            <li>Visit to the Nageshwara Jyotirlingam Temple</li>
-                                            <li>Visit Somnath Jyotirlinga temple</li>
-                                            <li>Visit Gir National Park</li>
-                                            <li>Toll Tax and Parking Charges, Fuel Charges Include</li>
-
-
-                                        </ul>
-                                    </details>
-                                </div>
-
-                                <div class="row">
-
-                                    <div class="col-md-4 col-xs-4"> <a
-                                            href="https://api.whatsapp.com/send?phone=918117887130&amp;text=Hi, I need a Gujarat Tour Package"
-                                            target="_blank" class="button-green sm"><i class="fa fa-whatsapp"
-                                                aria-hidden="true"></i></a> <a
-                                            onclick="return gtag_report_conversion('tel:9643368210');"
-                                            href="tel:9643368210" class="button sm"><i class="fa fa-phone"></i></a>
-                                    </div>
-                                    <div class="col-md-8 col-xs-8"> <a
-                                            href=""
-                                            class="button-orange sm" data-toggle="modal"
-                                            data-target="#enquirymodal">ENQUIRY NOW</a> </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-deal">
-                            <div class="sDeal-top"> <img src="images/pack3.webp" alt="Gujarat Tour Package">
-                                <!-- <div class="sDeal-action">
-                                    <h4>Starting Price - 15900(Per Person)</h4> </div>-->
-                            </div>
-                            <div class="sDeal-bottom">
-                                <h6>Best Gujarat Tour Package<span> 4 Nights 5 Days</span></h6>
                                 <div class="price-div"> <span class="per-p">From</span>
                                     <h2><i class="fa fa-inr" aria-hidden="true"></i> 11,999 </h2><span
                                         class="per-p">ONWARDS</span>
@@ -14479,6 +14400,90 @@
 
                                 </ul>
                                 <hr>
+                                <div class="body">
+                                    <h2>Package Inclusions:</h2>
+                                    <ul class="pkg-incusion">
+
+                                        <li>Welcome Drink on Arrival (Non Alcoholic).</li>
+
+                                        <li>Meal Plan Breakfast &amp; Dinner</li>
+
+                                    </ul>
+                                    <details>
+                                        <summary>
+                                            <span id="open">read more</span>
+                                            <span id="close">close</span>
+                                        </summary>
+                                        <ul class="pkg-incusion">
+
+                                            <li>Night Stay in 3 STAR Hotel for 4 Nights</li>
+                                            <li>All Famous Tourist places in PRIVATE CAB</li>
+                                            <li>Tour of Dwakadheesh Dham included</li>
+                                            <li>Tour of  Nageshwar Jyotirlinga Included</li>
+                                            <li>Tour of Somnath Jyotirlinga Included</li>
+                                            <li>Famous Akshardham Temple Tour Included</li>
+                                            <li>ALL local Important Places Tour</li>
+                                            <li>Fuel Charge, Toll Tax, Drivers Bata All Included</li>
+                                            <li>Get complete details in your Mail of Whatsapp by Filling the Enquiry Form(Highlight)</li>
+                                        </ul>
+                                    </details>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-4 col-xs-4"> <a
+                                            href="https://api.whatsapp.com/send?phone=918117887130&amp;text=Hi, I need a Gujarat Tour Package"
+                                            target="_blank" class="button-green sm"><i class="fa fa-whatsapp"
+                                                aria-hidden="true"></i></a> <a
+                                            onclick="return gtag_report_conversion('tel:9643368210');"
+                                            href="tel:9643368210" class="button sm"><i class="fa fa-phone"></i></a>
+                                    </div>
+                                    <div class="col-md-8 col-xs-8"> <a
+                                        
+                                            class="button-orange sm" onclick="PackageEnquiry('Dwarka Somnath Gir Tour Package')">ENQUIRY NOW</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-deal">
+                            <div class="sDeal-top"> <img src="images/pack3.webp" alt="Gujarat Tour Package">
+                                <!-- <div class="sDeal-action">
+                                    <h4>Starting Price - 15900(Per Person)</h4> </div>-->
+                            </div>
+                            <div class="sDeal-bottom">
+                                <h6>AHMEDABAD | DWARKA | SOMNATH | BHAVNAGAR<span> 5 Nights 6 Days</span></span></h6>
+                                <div class="price-div"> <span class="per-p">From</span>
+                                    <h2><i class="fa fa-inr" aria-hidden="true"></i> On Request </h2><span
+                                        class="per-p">ONWARDS</span>
+                                </div>
+                                <hr>
+                                <h4>Include</h4>
+                                <ul class="itnry">
+                                    <li>
+                                        <figure> <img src="images/transfer-icon.png" alt="transport" title="Transport"
+                                                class="img-fluid"> </figure>
+                                        <p>Transfers</p>
+                                    </li>
+                                    <li>
+                                        <figure> <img src="images/hotel-icon.png" alt="Hotel" title="Hotel"
+                                                class="img-fluid"> </figure>
+                                        <p>Hotels</p>
+                                    </li>
+                                    <li>
+                                        <figure> <img src="images/meals-icon.png" alt="Meal" title="Meal"
+                                                class="img-fluid"> </figure>
+                                        <p>Meals</p>
+                                    </li>
+                                    <li>
+                                        <figure> <img src="images/Sightseeing-icon.png" alt="Sightseeing"
+                                                title="Sightseeing" class="img-fluid"> </figure>
+                                        <p>Sightseeing</p>
+                                    </li>
+
+
+                                </ul>
+                                <hr>
 
                                 <div class="body">
                                     <h2>Package Inclusions:</h2>
@@ -14496,24 +14501,17 @@
                                         </summary>
                                         <ul class="pkg-incusion">
 
-                                            <li>Accommodation for 4 Nights</li>
-                                            <li>Dwarka(2N) | Somnath(1N) | Ahmedabad(1N)</li>
-                                            <li>Accommodation : On DBL sharing at all the location in Luxury Rooms</li>
-                                            <li>All Sightseeing in Private Cab</li>
-                                            <li>Visit Jamnagar, Bala Hanuman Temple, and Lakota Lake</li>
-                                            <li>Visit Nageshwar Jyotirlinga, Gopi Talav, Bet Dwarka, Rukmani Temple</li>
-                                            <li>Visit Kirti Mandir - the place where Gandhiji was born, and Sudama
-                                                temple</li>
-                                            <li>Visit Bhalka Tirth, Triveni Ghat &amp; Somnath Temple, Evening attend
-                                                aarti</li>
-                                            <li>Enjoy Safari at Sasan Gir at Devliya Park</li>
-                                            <li>Visit Uperkot Fort, Ashok Rock Edict, Mahabat Makabara and Junagadh
-                                                Museum.</li>
-                                            <li>Visit Jalaram Temple, Swaminarayan temple, Navlakha Palace, and Vintage
-                                                Car museum at Gondal.</li>
-                                            <li>Toll Tax and Parking Charges, Fuel Charges Include</li>
-
-
+                                            <li>Night Stay in 3 STAR Hotel for 4 Nights</li>
+                                            <li>All Famous Tourist places in PRIVATE CAB</li>
+                                            <li>Tour of Dwakadheesh Dham included</li>
+                                            <li>Tour of  Nageshwar Jyotirlinga Included</li>
+                                            <li>Tour of Somnath Jyotirlinga Included</li>
+                                            <li>Famous Akshardham Temple Tour Included</li>
+                                            <li>NISHKALANK MAHADEV TEMPLE TOUR</li>
+                                            <li>ALL local Important Places Tour</li>
+                                            <li>Fuel Charge, Toll Tax, Drivers Bata All Included</li>
+                                            <li>Get complete details in your Mail of Whatsapp by Filling the Enquiry Form</li>
+                        
                                         </ul>
                                     </details>
                                 </div>
@@ -14528,9 +14526,8 @@
                                             href="tel:9643368210" class="button sm"><i class="fa fa-phone"></i></a>
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
-                                            href=""
-                                            class="button-orange sm" data-toggle="modal"
-                                            data-target="#enquirymodal">ENQUIRY NOW</a> </div>
+                                            
+                                            class="button-orange sm" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | BHAVNAGAR')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -14543,10 +14540,10 @@
                                     <h4>Starting Price - 11999(Per Person)</h4> </div>-->
                             </div>
                             <div class="sDeal-bottom">
-                                <h6>Best of Saurashtra: Gujarat &amp; Diu Island<span> 6 Nights 7 Days</span></h6>
+                                <h6>AHMEDABAD | DWARKA | SOMNATH | DIU| VADODARA<span> 6 Nights 7 Days</span></h6>
 
                                 <div class="price-div"> <span class="per-p">From</span>
-                                    <h2><i class="fa fa-inr" aria-hidden="true"></i> 12,999 </h2><span
+                                    <h2><i class="fa fa-inr" aria-hidden="true"></i> On Request </h2><span
                                         class="per-p">ONWARDS</span>
                                 </div>
                                 <hr>
@@ -14597,20 +14594,17 @@
                                         </summary>
                                         <ul class="pkg-incusion">
 
-                                            <li>Accomodation for 6 Nights</li>
-                                            <li>Ahmedabad(0N) | Dwarka(2N) | Somnath(1N) | Diu(1N) | Sasan Gir(1N) |
-                                                Ahmedabad(1N)</li>
-                                            <li>Accommodation : On DBL sharing at all the location in Luxury Rooms</li>
-                                            <li>All Sightseeing in Private Cab</li>
-                                            <li>Visit Nageshwar Jyotirling, Gopi Talav, Bet Dwarka, Rukmani Temple</li>
-                                            <li>Visit Porbandar, the birthplace of Mahatma Gandhi &amp; Kirti Mandir.
-                                            </li>
-                                            <li>Visit Triveni Ghat, and Bhalka Tirth, Nagoa Beach</li>
-                                            <li>Visit Diu Fort, Museum, Church, Ghogla Beach, Diu Market</li>
-                                            <li>Visit Develiya Park Safari. Gir National Park - the home of the Great
-                                                Asiatic Lion</li>
-                                            <li>Toll Tax and Parking Charges, Fuel Charges Include</li>
-
+                                            <li>Night Stay in 3 STAR Hotel for 4 Nights</li>
+                                            <li>All Famous Tourist places in PRIVATE CAB</li>
+                                            <li>Tour of Dwakadheesh Dham included</li>
+                                            <li>Tour of  Nageshwar Jyotirlinga Included</li>
+                                            <li>Tour of Somnath Jyotirlinga Included</li>
+                                            <li>Tour Of STATUE OF UNITY- WORLDS TALLEST STATUE</li>
+                                            <li>Famous Akshardham Temple Tour Included</li>
+                                            <li>All Local Attraction of Diu</li>
+                                            <li>ALL local Important Places Tour</li>
+                                            <li>Fuel Charge, Toll Tax, Drivers Bata All Included</li>
+                                            <li>Get complete details in your Mail of Whatsapp by Filling the Enquiry Form</li>
 
                                         </ul>
                                     </details>
@@ -14626,9 +14620,8 @@
                                             href="tel:9643368210" class="button sm"><i class="fa fa-phone"></i></a>
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
-                                            href=""
-                                            class="button-orange sm" data-toggle="modal"
-                                            data-target="#enquirymodal">ENQUIRY NOW</a> </div>
+                                            
+                                            class="button-orange sm" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | DIU| VADODARA')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -14641,10 +14634,10 @@
                                     <h4>Starting Price - 11999(Per Person)</h4> </div>-->
                             </div>
                             <div class="sDeal-bottom">
-                                <h6>Fascinating Ahmedabad, Diu and Somnath<span> 7 Nights 8 Days</span></h6>
+                                <h6>AHMEDABAD | DWARKA | SOMNATH | DIU|GIR| VADODARA<span> 7 Nights 8 Days</span></h6>
 
                                 <div class="price-div"> <span class="per-p">From</span>
-                                    <h2><i class="fa fa-inr" aria-hidden="true"></i> 13,999 </h2><span
+                                    <h2><i class="fa fa-inr" aria-hidden="true"></i> On Request </h2><span
                                         class="per-p">ONWARDS</span>
                                 </div>
                                 <hr>
@@ -14690,25 +14683,18 @@
                                         </summary>
                                         <ul class="pkg-incusion">
 
-                                            <li>Accommodation for 7 Nights</li>
-                                            <li>Accommodation : On DBL sharing at all the location in Luxury Rooms</li>
-                                            <li>Ahmedabad(1N) | Bhavnagar(1N) | Sasan Gir(1N) | Diu(1N) | Somnath(1N) |
-                                                Dwarka(1N) | Rajkot(1N)</li>
-                                            <li>All Sightseeing in Private Cab</li>
-                                            <li>Visit Gandhi Ashram, City museum, and Hathising Jain Temple, Akshardham
-                                                Temple</li>
-                                            <li>Visit Nishkalank Mahadev Temple, Lothal, Velavadar</li>
-                                            <li>Enjoy Jeep Safari in Gir national park</li>
-                                            <li>Visit Palitana, Gir Interpretation Zone</li>
-                                            <li>Visit St. Paul's Church, Diu Museum, and Diu Fort.</li>
-                                            <li>Visit Bhalka Tirth, Triveni Sagam, Geeta Mandir Chopati &amp; Somnath
-                                                Temple</li>
-                                            <li>Visit Porbandar, Kirti Mandir – the place where Gandhiji was born, and
-                                                Sudama Temple</li>
-                                            <li>Visit Old Temple of Krishna, Nageshwar Temple, Rukmini Temple, and Gopi
-                                                Talav, Bala Hanuman Temple</li>
-                                            <li>Toll Tax and Parking Charges, Fuel Charges Include</li>
-
+                                            <li>Night Stay in 3 STAR Hotel for 4 Nights</li>
+                                            <li>All Famous Tourist places in PRIVATE CAB</li>
+                                            <li>Tour of Dwakadheesh Dham included</li>
+                                            <li>Tour of  Nageshwar Jyotirlinga Included</li>
+                                            <li>Gir National Park Safari</li>
+                                            <li>Tour of Somnath Jyotirlinga Included</li>
+                                            <li>Tour Of STATUE OF UNITY- WORLDS TALLEST STATUE</li>
+                                            <li>Famous Akshardham Temple Tour Included</li>
+                                            <li>All Local Attraction of Diu</li>
+                                            <li>ALL local Important Places Tour</li>
+                                            <li>Fuel Charge, Toll Tax, Drivers Bata All Included</li>
+                                            <li>Get complete details in your Mail of Whatsapp by Filling the Enquiry Form</li>
 
                                         </ul>
                                     </details>
@@ -14724,9 +14710,99 @@
                                             href="tel:9643368210" class="button sm"><i class="fa fa-phone"></i></a>
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
-                                            href=""
-                                            class="button-orange sm" data-toggle="modal"
-                                            data-target="#enquirymodal">ENQUIRY NOW</a> </div>
+                                            
+                                            class="button-orange sm" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | DIU|GIR| VADODARA')">ENQUIRY NOW</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single-deal">
+                            <div class="sDeal-top"> <img src="images/pack5.webp"
+                                    alt="Ahmedabad, Diu and Somnath Tour Package">
+                                <!-- <div class="sDeal-action">
+                                    <h4>Starting Price - 11999(Per Person)</h4> </div>-->
+                            </div>
+                            <div class="sDeal-bottom">
+                                <h6>AHMEDABAD | DWARKA | SOMNATH | KUTCH|BHUJ<span> 9 Nights 10 Days</span></h6>
+
+                                <div class="price-div"> <span class="per-p">From</span>
+                                    <h2><i class="fa fa-inr" aria-hidden="true"></i> On Request </h2><span
+                                        class="per-p">ONWARDS</span>
+                                </div>
+                                <hr>
+                                <h4>Include</h4>
+                                <ul class="itnry">
+                                    <li>
+                                        <figure> <img src="images/transfer-icon.png" alt="transport" title="Transport"
+                                                class="img-fluid"> </figure>
+                                        <p>Transfers</p>
+                                    </li>
+                                    <li>
+                                        <figure> <img src="images/hotel-icon.png" alt="Hotel" title="Hotel"
+                                                class="img-fluid"> </figure>
+                                        <p>Hotels</p>
+                                    </li>
+                                    <li>
+                                        <figure> <img src="images/meals-icon.png" alt="Meal" title="Meal"
+                                                class="img-fluid"> </figure>
+                                        <p>Meals</p>
+                                    </li>
+                                    <li>
+                                        <figure> <img src="images/Sightseeing-icon.png" alt="Sightseeing"
+                                                title="Sightseeing" class="img-fluid"> </figure>
+                                        <p>Sightseeing</p>
+                                    </li>
+
+
+                                </ul>
+                                <hr>
+                                <div class="body">
+                                    <h2>Package Inclusions:</h2>
+                                    <ul class="pkg-incusion">
+
+                                        <li>Welcome Drink on Arrival (Non Alcoholic).</li>
+
+                                        <li>Meal Plan Breakfast &amp; Dinner</li>
+
+                                    </ul>
+                                    <details>
+                                        <summary>
+                                            <span id="open">read more</span>
+                                            <span id="close">close</span>
+                                        </summary>
+                                        <ul class="pkg-incusion">
+
+                                            <li>Night Stay in 3 STAR Hotel for 4 Nights</li>
+                                            <li>All Famous Tourist places in PRIVATE CAB</li>
+                                            <li>Tour of Dwakadheesh Dham included</li>
+                                            <li>Tour of  Nageshwar Jyotirlinga Included</li>
+                                            <li>Tour of Somnath Jyotirlinga Included</li>
+                                            <li>Tour of Bhuj and Kutch</li>
+                                            <li>RAnn UTSAV</li>
+                                            <li>WHITE RANN SAFARI</li>
+                                            <li>Famous Akshardham Temple Tour Included</li>
+                                            <li>NISHKALANK MAHADEV TEMPLE TOUR</li>
+                                            <li>ALL local Important Places Tour</li>
+                                            <li>Fuel Charge, Toll Tax, Drivers Bata All Included</li>
+                                            <li>Get complete details in your Mail of Whatsapp by Filling the Enquiry Form</li>
+
+                                        </ul>
+                                    </details>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-md-4 col-xs-4"> <a
+                                            href="https://api.whatsapp.com/send?phone=918117887130&amp;text=Hi, I need a Gujarat Tour Package"
+                                            target="_blank" class="button-green sm"><i class="fa fa-whatsapp"
+                                                aria-hidden="true"></i></a> <a
+                                            onclick="return gtag_report_conversion('tel:9643368210');"
+                                            href="tel:9643368210" class="button sm"><i class="fa fa-phone"></i></a>
+                                    </div>
+                                    <div class="col-md-8 col-xs-8"> <a
+                                            
+                                            class="button-orange sm" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | KUTCH|BHUJ')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -14747,8 +14823,7 @@
                     </div>
                     <div class="col-md-3 col-xs-12">
                         <p class="text-center"> <span class="secondary-button">
-                                <a href="" data-toggle="modal"
-                                    data-target="#enquirymodal">BooK Now <i class="fa fa-arrow-right"></i></a>
+                                <a  onclick="PackageEnquiry()" >BooK Now <i class="fa fa-arrow-right"></i></a>
                             </span> </p>
                     </div>
                 </div>
@@ -14798,7 +14873,7 @@
         </div>
     </div>
     <!-- .process-section -->
-    <div class="modal" id="enquirymodal" tabindex="-1" role="dialog" aria-labelledby="enquirymodal" aria-hidden="true"
+    <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="enquirymodal" aria-hidden="true"
         style="display: none;">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -14816,14 +14891,14 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
-                                            <input id="cf-name" type="text" name="name" placeholder="Name" required="">
+                                            <input id="fmname" type="text" name="name" placeholder="Name" required="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
-                                            <input id="cf-email" type="email" name="email" placeholder="Email"
+                                            <input id="fmemail" type="email" name="email" placeholder="Email"
                                                 required="">
                                         </div>
                                     </div>
@@ -14832,7 +14907,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
-                                            <input id="cf-subject" type="text" name="phone" placeholder="Phone Number"
+                                            <input id="fmPhone" type="text" name="phone" placeholder="Phone Number"
                                                 required="">
                                         </div>
                                     </div>
@@ -14840,7 +14915,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
-                                            <input id="cf-subject" type="text" name="person"
+                                            <input id="fMperson" type="text" name="person"
                                                 placeholder="Number of Person" required="">
                                         </div>
                                     </div>
@@ -14850,7 +14925,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
-                                            <input id="cf-subject" type="text" name="dateoftravel"
+                                            <input id="fmDate" type="text" name="dateoftravel"
                                                 placeholder="Travel Date">
                                         </div>
                                     </div>
@@ -14861,7 +14936,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
-                                            <textarea id="cf-name" rows="2" name="requirement"
+                                            <textarea id="fmMsg" rows="2" name="requirement"
                                                 placeholder="Write Your Message"></textarea>
                                         </div>
                                     </div>
@@ -14871,7 +14946,7 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
-                                            <input class="button sm" id="cf-submit" name="buttonsubmit" type="submit"
+                                            <input class="button sm" id="fmSendButton" name="buttonsubmit" type="submit"
                                                 value="Send Enquiry">
                                         </div>
                                     </div>
@@ -14960,6 +15035,14 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
+    <script src="js/Mailsend.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         $('.input-group.date').datepicker({
             format: "yyyy-mm-dd"
