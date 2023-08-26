@@ -207,7 +207,7 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
 }@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media (min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table !important}tr.visible-print{display:table-row !important}td.visible-print,th.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}
         /*# sourceMappingURL=bootstrap.min.css.map */
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
     <style amp-custom>
@@ -630,8 +630,17 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
         }
 
         .navbar-default .navbar-nav>li>a.btn2 {
-            background-color: #616060
+            background-color: black;
+      -webkit-animation-name: blackWhite;  
+      -webkit-animation-iteration-count: infinite;  
+      -webkit-animation-duration: 2s; 
         }
+        @-webkit-keyframes blackWhite {  
+    0% { background-color: red; }
+    50% { background-color: orangered; }
+    51% { background-color: darkorange; }
+    100% { background-color: darkcyan; }
+  }
 
         .glowing-btn {
             background-color: #2e3042 !important;
@@ -2227,6 +2236,71 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
     </style>
 
     <style amp-custom>
+/* CSS */
+.button-8 {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #39739d;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-8:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+.button-33 {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
         .topper {
             background-image: linear-gradient(rgb(0 0 0 / 34%), rgb(0 0 0 / 0%)), url(https://geekchakit.github.io/Gujarat-Somnath/images/Banner.webp);
             background-size: cover;
@@ -2792,12 +2866,12 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                             width="150px"></a>
                 </div>
                 <div class="col-md-6">
-                    <h5 style="margin: 10px 0px"><i class="fa fa-phone" aria-hidden="true"></i> Call Now <a
+                    <h5 style="margin: 10px 0px"><img src="phone-call.png" style="height: 20px; width: 20px;"> <a
                             onclick="return gtag_report_conversion('tel:9643368210');" href="tel:9643368210"
                             class="letter1sps u-pull-right"> +91-9643368210 </a></h5>
                 </div>
                 <div class="col-md-6">
-                    <h5 style="margin: 10px 0px"> <i class="fa fa-envelope-o" aria-hidden="true"></i> Mail Us <a
+                    <h5 style="margin: 10px 0px"> <img src="letter.png" style="height: 20px; width: 20px;"> <a
                             href="mail-to:sales@darshanrathholidays.com" class="letter1sps u-pull-right">
                             sales@darshanrathholidays.com </a></h5>
                 </div>
@@ -2820,16 +2894,16 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                 <div class="collapse navbar-collapse" id="site-collapse-nav">
                     <ul class="nav nav-list navbar-nav navbar-right">
                         <li> <a href="mailto:sales@darshanrathholidays.com"
-                                class="letter1sps u-pull-right btn2">sales@darshanrathholidays.com</a> </li>
+                                class="letter1sps u-pull-right btn2"><img src="letter.png" style="height: 30px; width: 30px;"> sales@darshanrathholidays.com</a> </li>
                         <li> <a onclick="return gtag_report_conversion('tel:9643368210');" href="tel:9643368210"
-                                class="letter1sps u-pull-right glowing-btn"> +91-9643368210 </a> </li>
+                                class="letter1sps u-pull-right glowing-btn"> <img src="phone-call.png" style="height: 30px; width: 30px;"> +91-9643368210 </a> </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
 
-    <section class="pack-menu">
+    <!-- <section class="pack-menu">
 
         <div class="row">
             <div class="col-md-2">
@@ -2837,40 +2911,40 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
             </div>
             <div class="col-md-10">
                 <ul class="tour">
-                    <!-- <li><a href="https://www.theincredibleindia.co.in/">Himachal Tour</a><span></span></li> -->
+                    <li><a href="https://www.theincredibleindia.co.in/">Himachal Tour</a><span></span></li>
                     <li><a href="" class="touractive">Gujarat
                             Tour</a><span></span></li>
-                    <!-- <li><a href="https://www.theincredibleindia.co.in/kedarnath-badrinath-tours">Kedarnath Badrinath
+                    <li><a href="https://www.theincredibleindia.co.in/kedarnath-badrinath-tours">Kedarnath Badrinath
                             Tour</a><span></span></li>
                     <li><a href="https://www.theincredibleindia.co.in/kerala-tour-packages/">Kerala
                             Tour</a><span></span></li>
                     <li><a href="https://www.theincredibleindia.co.in/uttarakhand-tour-packages/">Uttarakhand
                             Tour</a><span></span></li>
-                    <li><a href="https://www.theincredibleindia.co.in/kashmir-tour-packages">Kashmir Tour</a></li> -->
+                    <li><a href="https://www.theincredibleindia.co.in/kashmir-tour-packages">Kashmir Tour</a></li>
                 </ul>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-    <section class="mobile-pack-menu">
+    <!-- <section class="mobile-pack-menu">
         <div class="row">
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Popular Tour Packages <img src="images/down.png"
                         style="width:15px"></button>
                 <div id="myDropdown" class="dropdown-content">
-                    <!-- <a href="https://www.theincredibleindia.co.in/">Himachal Tour</a> -->
+                    <a href="https://www.theincredibleindia.co.in/">Himachal Tour</a>
                     <a href="">Gujarat Tour</a>
-                    <!-- <a href="https://www.theincredibleindia.co.in/kedarnath-badrinath-tours/">Kedarnath Badrinath
+                    <a href="https://www.theincredibleindia.co.in/kedarnath-badrinath-tours/">Kedarnath Badrinath
                         Tour</a>
                     <a href="https://www.theincredibleindia.co.in/kerala-tour-packages/">Kerala Tour</a>
                     <a href="https://www.theincredibleindia.co.in/uttarakhand-tour-packages/">Uttarakhand Tour</a>
-                    <a href="https://www.theincredibleindia.co.in/kashmir-tour-packages/">Kashmir Tour</a> -->
+                    <a href="https://www.theincredibleindia.co.in/kashmir-tour-packages/">Kashmir Tour</a>
                 </div>
             </div>
 
         </div>
-    </section>
+    </section> -->
 
     <section class="topper">
         <div class="header-section" id="header">
@@ -2882,38 +2956,28 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                                 <h3>Best Deal on Gujarat Tour Packages</h3>
                                 <h1>Lowest Price Guaranteed</h1>
                                 <ul>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Friendly Customer Support</li>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> 100% Money Safe Guarantee</li>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Secure &amp; Safe Journey</li>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Best Gujarat Tour Packages with
+                                    <li><img style="height: 30px; width: 30px;" src="arrow.png"> Friendly Customer Support</li>
+                                    <li><img style="height: 30px; width: 30px;" src="arrow.png"> 100% Money Safe Guarantee</li>
+                                    <li><img style="height: 30px; width: 30px;" src="arrow.png"> Secure &amp; Safe Journey</li>
+                                    <li><img style="height: 30px; width: 30px;" src="arrow.png"> Best Gujarat Tour Packages with
                                         in your budget</li>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Customized you trip as per your
+                                    <li><img style="height: 30px; width: 30px;" src="arrow.png"> Customized you trip as per your
                                         choice</li>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Enjoy the perfect trip with the
+                                    <li><img style="height: 30px; width: 30px;" src="arrow.png"> Enjoy the perfect trip with the
                                         help of our tour experts.</li>
                                 </ul>
                             </div>
                             <div class="tourz-hom-ser v2-hom-ser">
                                 <ul>
-                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><i
-                                                class="fa fa-file" aria-hidden="true"
-                                                style="font-size: 50px ;color:#00bacf "></i> 10+ Years of Travel
+                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="best-customer-experience.png" style="height: 40px; width:40px;"> 10+ Years of Travel
                                             Experience</a> </li>
-                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><i
-                                                class="fa fa-smile-o" aria-hidden="true"
-                                                style="font-size: 50px ;color:#00bacf "></i> 10,000+ Counting Happy
+                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="three.png" style="height: 40px; width: 40px;">  10,000+ Counting Happy
                                             Customers</a> </li>
-                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><i
-                                                class="fa fa-phone-square" aria-hidden="true"
-                                                style="font-size: 50px ;color:#00bacf "></i>24x7 Customer Helpline </a>
+                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="24-hours.png" style="height: 40px; width: 40px;">24x7 Customer Helpline </a>
                                     </li>
-                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><i
-                                                class="fa fa-percent" aria-hidden="true"
-                                                style="font-size: 50px ;color:#00bacf "></i> Special Discounts for
+                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="discount.png" style="height: 40px; width: 40px;"> Special Discounts for
                                             Groups</a> </li>
-                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><i
-                                                class="fa fa-users" aria-hidden="true"
-                                                style="font-size: 50px ;color:#00bacf "></i> 50+ Team Staff &amp; Ground
+                                    <li> <a href="#" class="waves-effect waves-light btn-large tourz-pop-ser-btn"><img src="united.png" style="height: 40px; width: 40px;"> 50+ Team Staff &amp; Ground
                                             experts</a> </li>
                                 </ul>
                             </div>
@@ -2983,7 +3047,7 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="input-box">
-                                                    <input class="button sm" onclick="SendLeadForm()" id="MineBntForm" 
+                                                    <input class="button-33" onclick="SendLeadForm()" id="MineBntForm" 
                                                         type="button" value="Send Enquiry">
                                                 </div>
                                             </div>
@@ -3104,7 +3168,7 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                                     </ul>
                                     <details>
                                         <summary>
-                                            <span id="open">read more</span>
+                                            <span id="open"><img class="image" src="read-more.png" style="height: 20px; width: 20px;"></span>
                                             <span id="close">close</span>
                                         </summary>
                                         <ul class="pkg-incusion">
@@ -3139,7 +3203,7 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                                             href="tel:9643368210" class="button sm"><i class="fa fa-phone"></i></a>
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
-                                            class="button-orange sm" onclick="PackageEnquiry('StatueOfUnity')">ENQUIRY NOW</a> </div>
+                                            class="button-8" onclick="PackageEnquiry('StatueOfUnity')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -3224,7 +3288,7 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
                                         
-                                            class="button-orange sm" onclick="PackageEnquiry('Dwarka Somnath Gir Tour Package')">ENQUIRY NOW</a> </div>
+                                            class="button-8" onclick="PackageEnquiry('Dwarka Somnath Gir Tour Package')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -3311,7 +3375,7 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
                                             
-                                            class="button-orange sm" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | BHAVNAGAR')">ENQUIRY NOW</a> </div>
+                                            class="button-8" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | BHAVNAGAR')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -3405,7 +3469,7 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
                                             
-                                            class="button-orange sm" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | DIU| VADODARA')">ENQUIRY NOW</a> </div>
+                                            class="button-8" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | DIU| VADODARA')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -3495,7 +3559,7 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
                                             
-                                            class="button-orange sm" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | DIU|GIR| VADODARA')">ENQUIRY NOW</a> </div>
+                                            class="button-8" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | DIU|GIR| VADODARA')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
@@ -3586,7 +3650,7 @@ table.visible-md{display:table !important}tr.visible-md{display:table-row !impor
                                     </div>
                                     <div class="col-md-8 col-xs-8"> <a
                                             
-                                            class="button-orange sm" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | KUTCH|BHUJ')">ENQUIRY NOW</a> </div>
+                                            class="button-8" onclick="PackageEnquiry('AHMEDABAD | DWARKA | SOMNATH | KUTCH|BHUJ')">ENQUIRY NOW</a> </div>
                                 </div>
                             </div>
                         </div>
