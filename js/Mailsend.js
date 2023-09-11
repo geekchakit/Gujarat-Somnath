@@ -1,7 +1,9 @@
 function SendEnquery() {
   $("#myModal").modal("show");
 }
-
+function OpenDestinationModel(DestinationModel){
+   $("#"+DestinationModel).modal("show");
+}
 function PackageEnquiry(PackageName) {
   $("#myModal").modal("show");
   localStorage.setItem("pkgname", PackageName);
@@ -73,7 +75,7 @@ function SendLeadForm() {
       email_id: $("#femail").val(),
       contact_no: $("#fPhone").val(),
       package_name: "Sent From Form",
-     startdate: $("#fDate").val(),
+      startdate: $("#fDate").val(),
       adult: $("#fNumberOfp").val(),
       // group:$("#GroupPKG").val(),
       message: $("#fMsg").val(),
@@ -115,6 +117,3 @@ function SendLeadForm() {
 function CloseModal() {
   $("#myModal").modal("hide");
 }
-
-
-
