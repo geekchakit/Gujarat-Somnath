@@ -26,7 +26,7 @@ function SendLead() {
       adult: $("#fMperson").val(),
       // group:$("#GroupPKG").val(),
       message: $("#fmMsg").val(),
-      website: "Gujarat",
+      website: "Gujarat Trip",
     };
     //    console.log(templateParams);
     emailjs
@@ -79,7 +79,7 @@ function SendLeadForm() {
       adult: $("#fNumberOfp").val(),
       // group:$("#GroupPKG").val(),
       message: $("#fMsg").val(),
-      website: "Gujarat",
+      website: "Gujarat Trip",
     };
     //    console.log(templateParams);
     emailjs
