@@ -11157,13 +11157,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="input-box">
                                                     <input id="femail" type="email" placeholder="Email">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
                                         <div class="row">
                                             <div class="col-sm-12">
@@ -11175,24 +11175,32 @@
                                                     hidden></p>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="input-box">
                                                     <input id="fNumberOfp" type="text" placeholder="Number of Person">
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
 
 
-                                        <div class="row">
+                                        <!-- <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="input-box">
                                                     <input id="fDate" type="text" placeholder="Travel Date">
                                                 </div>
                                             </div>
+                                        </div> -->
+
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="input-box">
+                                                    <textarea id="fNoRobot" rows="2"
+                                                        placeholder="2+3 is "></textarea>
+                                                </div>
+                                                <p class="text-danger" id="fNoRobotValidate" style="font-size: 12px;"></p>
+                                            </div>
                                         </div>
-
-
 
                                         <div class="row">
                                             <div class="col-sm-12">
@@ -12435,7 +12443,7 @@
                     <div class="room-check" id="contacta">
                         <h4 class="text-center">70% Off GET FREE QUOTE!</h4>
                         <div class="room-check-body">
-                            <form class="contact-form" id="enquiry-form" action="email-send.php" method="post">
+                            <form class="contact-form" id="enquiry-form">
 
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -12444,43 +12452,53 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
                                             <input id="fmemail" type="email" name="email" placeholder="Email"
                                                 required="">
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
                                             <input id="fmPhone" type="text" name="phone" placeholder="Phone Number"
                                                 required="">
+                                                <p class="text-danger" id="ValidatePhoneModel" style="font-size: 12px;"></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
                                             <input id="fMperson" type="text" name="person"
                                                 placeholder="Number of Person" required="">
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
 
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
                                             <input id="fmDate" type="text" name="dateoftravel"
                                                 placeholder="Travel Date">
                                         </div>
                                     </div>
+                                </div> -->
+
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="input-box">
+                                            <textarea id="fmNoRobot" rows="2"
+                                                placeholder="2+3 is "></textarea>
+                                        </div>
+                                        <p class="text-danger" id="fmNoRobotValidate" style="font-size: 12px;"></p>
+                                    </div>
                                 </div>
-
-
 
                                 <div class="row">
                                     <div class="col-sm-12">
@@ -12495,8 +12513,8 @@
                                 <div class="row">
                                     <div class="col-sm-12">
                                         <div class="input-box">
-                                            <input class="button sm" id="fmSendButton" name="buttonsubmit" type="submit"
-                                                value="Send Enquiry">
+                                            <input class="button sm" id="fmSendButton" name="buttonsubmit" type="button"
+                                                value="Send Enquiry" onclick="SendLead()">
                                         </div>
                                     </div>
                                 </div>
